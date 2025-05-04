@@ -1,12 +1,14 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHabits } from '@/context/HabitsContext';
 import HabitCard from '@/components/habits/HabitCard';
 import AddHabitForm from '@/components/habits/AddHabitForm';
 import { Button } from '@/components/ui/button';
+import FullCompletionCelebration from '@/components/ui/FullCompletionCelebration';
 
 const Home: React.FC = () => {
   const { todaysHabits, addHabit, toggleHabit, resetTodaysHabits } = useHabits();
+  const [showCelebration, setShowCelebration] = useState(false);
   
   const today = new Date().toLocaleDateString('en-US', {
     weekday: 'long', 
@@ -18,8 +20,19 @@ const Home: React.FC = () => {
   const maxHabitsReached = todaysHabits.length >= 3;
   const allCompleted = todaysHabits.length > 0 && todaysHabits.every(h => h.completed);
 
+  // Check if all habits are complete and trigger celebration
+  useEffect(() => {
+    if (todaysHabits.length === 3 && allCompleted) {
+      setShowCelebration(true);
+    } else {
+      setShowCelebration(false);
+    }
+  }, [todaysHabits, allCompleted]);
+
   return (
     <div className="max-w-5xl mx-auto space-y-8 animate-slide-up">
+      <FullCompletionCelebration show={showCelebration} />
+      
       <div className="text-center">
         <h2 className="text-2xl font-bold">{today}</h2>
         <p className="text-muted-foreground mt-2">Focus on three tiny wins for today</p>

@@ -3,6 +3,7 @@ import React from 'react';
 import { useHabits } from '@/context/HabitsContext';
 import { Card } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import StreakTracker from '@/components/habits/StreakTracker';
 
 const History: React.FC = () => {
   const { historyHabits } = useHabits();
@@ -27,6 +28,8 @@ const History: React.FC = () => {
         <h2 className="text-2xl font-bold">Your History</h2>
         <p className="text-muted-foreground mt-2">Track your progress over time</p>
       </div>
+      
+      <StreakTracker historyHabits={historyHabits} />
       
       {sortedHistory.length === 0 ? (
         <Card className="p-8 text-center">

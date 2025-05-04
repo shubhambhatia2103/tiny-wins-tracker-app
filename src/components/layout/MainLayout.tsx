@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Home, Calendar, Settings } from 'lucide-react';
+import BackgroundDoodles from '../ui/BackgroundDoodles';
 
 const MainLayout: React.FC = () => {
   const location = useLocation();
@@ -13,19 +14,21 @@ const MainLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="py-6 px-4 border-b">
+    <div className="min-h-screen flex flex-col font-aguila relative">
+      <BackgroundDoodles />
+      
+      <header className="py-6 px-4 border-b relative z-10">
         <div className="max-w-5xl mx-auto">
           <h1 className="font-bold text-2xl text-center md:text-left">Tiny Wins</h1>
           <p className="text-muted-foreground text-sm text-center md:text-left">Track your micro habits, celebrate small victories</p>
         </div>
       </header>
 
-      <main className="flex-1 py-8 px-4">
+      <main className="flex-1 py-8 px-4 relative z-10">
         <Outlet />
       </main>
 
-      <footer className="py-4 px-4 border-t">
+      <footer className="py-4 px-4 border-t relative z-10">
         <nav className="max-w-md mx-auto">
           <ul className="flex justify-between items-center">
             <li>

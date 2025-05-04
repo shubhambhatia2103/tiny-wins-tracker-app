@@ -38,8 +38,8 @@ const HabitCard: React.FC<HabitCardProps> = ({ habit, onToggle }) => {
             onClick={handleToggle}
             variant={habit.completed ? "default" : "outline"}
             size="lg"
-            className={`rounded-full w-14 h-14 transition-all ${
-              habit.completed ? 'bg-primary text-primary-foreground' : 'bg-white/50 hover:bg-white/80'
+            className={`rounded-full w-16 h-16 transition-all ${
+              habit.completed ? 'bg-primary text-primary-foreground animate-pulse-gentle' : 'bg-white/50 hover:bg-white/80'
             }`}
           >
             <Check className={`w-6 h-6 ${habit.completed ? 'text-white' : 'text-gray-400'}`} />
