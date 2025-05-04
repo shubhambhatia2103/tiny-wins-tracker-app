@@ -66,13 +66,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for our Tiny Wins app
-				tinyWins: {
-					blue: '#D3E4FD',
-					green: '#F2FCE2',
-					peach: '#FDE1D3',
-					purple: '#E5DEFF',
-					gray: '#F1F0FB',
+				// New nature-inspired color palette
+				nature: {
+					leaf: '#4ECDC4',
+					moss: '#1A535C',
+					sunlight: '#FFE66D',
+					blossom: '#FF6B6B',
+					sky: '#A9E5EF',
+					cloud: '#F7F9F9',
+					sunset: '#FFA69E',
+					stone: '#ADB5BD',
 				}
 			},
 			borderRadius: {
@@ -130,7 +133,11 @@ export default {
 				'rotate-slow': {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' }
-				}
+				},
+				'shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -141,7 +148,13 @@ export default {
 				'slide-up': 'slide-up 0.3s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite',
-				'rotate-slow': 'rotate-slow 12s linear infinite'
+				'rotate-slow': 'rotate-slow 12s linear infinite',
+				'shimmer': 'shimmer 2s infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'noise': 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%\' height=\'100%\' filter=\'url(%23noiseFilter)\' opacity=\'0.05\'/%3E%3C/svg%3E")',
 			}
 		}
 	},

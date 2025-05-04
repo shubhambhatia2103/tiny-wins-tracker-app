@@ -14,16 +14,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 208 90% 64%;
+    /* Updated color palette - more calming and nature-inspired */
+    --primary: 160 59% 55%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 162 84% 88%;
+    --secondary: 186 96% 90%;
     --secondary-foreground: 222 47% 11%;
 
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 245 83% 95%;
+    --accent: 263 83% 95%;
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
@@ -31,9 +32,9 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 222 84% 70%;
+    --ring: 160 59% 55%;
 
-    --radius: 1rem;
+    --radius: 1.5rem;
   }
 }
 
@@ -47,12 +48,59 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* Custom utility classes */
+  /* Updated utility classes with more organic styling */
   .habit-card {
-    @apply bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200 p-6 flex flex-col gap-3;
+    @apply bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-200 p-7 flex flex-col gap-3;
   }
   
   .habits-container {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto;
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto;
+  }
+
+  /* New animation keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Animation classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 3s ease-in-out infinite;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, 
+      rgba(255,255,255,0) 0%, 
+      rgba(255,255,255,0.5) 50%, 
+      rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* Additional custom utilities */
+  .card-glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+  
+  .eco-shadow {
+    box-shadow: 0 8px 20px -8px rgba(49, 151, 149, 0.3);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:translate-y-[-5px];
   }
 }
