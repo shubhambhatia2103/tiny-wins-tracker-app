@@ -64,12 +64,12 @@ Whether it's drinking water, stretching for 5 minutes, or reading a page of a bo
    cd tiny-wins
    
 2. Install dependencies:
-  ```bash
-  npm install
+   ```bash
+   npm install
 
 3. Start the development server:
-  ```bash
-  npm start
+   ```bash
+   npm start
 
 
 # Welcome to your Lovable project
