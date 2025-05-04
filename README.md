@@ -41,17 +41,18 @@ Whether it's drinking water, stretching for 5 minutes, or reading a page of a bo
 
 ## 📸 Preview
 
-[live demo link](#https://tiny-wins-tracker-app.lovable.app)
+[live demo link](https://tiny-wins-tracker-app.lovable.app)
 
 ---
 
+
 ## 🚀 Tech Stack
 
-- **Frontend**: React.js (or your chosen framework)  
-- **Styling**: TailwindCSS / CSS Modules / Styled Components  
-- **Animations**: Framer Motion or CSS transitions  
-- **Notifications**: Web Notifications API  
-- *(Modify this based on your actual stack)*
+- ⚡ **Vite** – Fast and optimized development experience  
+- 🟦 **TypeScript** – Type-safe JavaScript for scalable development  
+- ⚛️ **React** – Component-based UI library  
+- 🎨 **Tailwind CSS** – Utility-first styling for rapid UI development  
+- 🧩 **shadcn/ui** – Accessible and customizable UI components  
 
 ---
 
@@ -65,13 +66,10 @@ Whether it's drinking water, stretching for 5 minutes, or reading a page of a bo
 2. Install dependencies:
   ```bash
   npm install
-  ```bash
 
 3. Start the development server:
   ```bash
   npm start
-
-
 
 
 # Welcome to your Lovable project
