@@ -3,7 +3,6 @@
 **A peaceful space to track your small daily goals.**  
 Tiny Wins helps you build momentum through gentle progress by focusing on micro habits—those little actions that lead to big change.
 
-![Tiny Wins Banner](#) <!-- Optional placeholder for a banner or screenshot -->
 
 ---
 
@@ -43,6 +42,7 @@ Whether it's drinking water, stretching for 5 minutes, or reading a page of a bo
 ## 📸 Preview
 
 > Coming soon — Stay tuned for screenshots & live demo link.
+> ![live demo link](#https://tiny-wins-tracker-app.lovable.app)
 
 ---
 
