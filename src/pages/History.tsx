@@ -18,8 +18,9 @@ const History: React.FC = () => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
       weekday: 'short',
-      month: 'short',
-      day: 'numeric'
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
     });
   };
 
