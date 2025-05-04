@@ -1,3 +1,80 @@
+# 🌱 Tiny Wins – Micro Habit Tracker
+
+**A peaceful space to track your small daily goals.**  
+Tiny Wins helps you build momentum through gentle progress by focusing on micro habits—those little actions that lead to big change.
+
+![Tiny Wins Banner](#) <!-- Optional placeholder for a banner or screenshot -->
+
+---
+
+## ✨ About
+
+**Tiny Wins** is a minimalist micro habit tracker designed to bring calm and joy into your daily routine. Inspired by the aesthetics of *Headspace* and *Calm*, this web app combines soft visuals with simple functionality to help you mark small achievements and celebrate progress—without the stress.
+
+Whether it's drinking water, stretching for 5 minutes, or reading a page of a book—Tiny Wins makes it easy and rewarding to stay consistent.
+
+---
+
+## 🎯 Features
+
+- 📋 **Dashboard**  
+  Track up to three daily micro habits with ease.
+
+- ✅ **Mark as Complete**  
+  Tap to complete habits and enjoy a gentle, delightful celebration animation.
+
+- 📆 **History View**  
+  Reflect on your consistency with a simple log of completed habits.
+
+- ⏰ **Reminders** *(Settings Page)*  
+  Set daily notification reminders to stay on track.
+
+---
+
+## 🧘‍♀️ Design Philosophy
+
+- **Calm and Soothing UI**: Soft pastel blues, greens, and peach tones.
+- **Minimalist Layout**: Clean typography, whitespace, and intuitive navigation.
+- **Gentle Animations**: Light transitions that feel rewarding, not overwhelming.
+- **Friendly Aesthetic**: Rounded corners, subtle shadows, and an inviting vibe.
+
+---
+
+## 📸 Preview
+
+> Coming soon — Stay tuned for screenshots & live demo link.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: React.js (or your chosen framework)  
+- **Styling**: TailwindCSS / CSS Modules / Styled Components  
+- **Animations**: Framer Motion or CSS transitions  
+- **Notifications**: Web Notifications API  
+- *(Modify this based on your actual stack)*
+
+---
+
+## 🛠️ Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/shubhambhatia2103/tiny-wins-tracker-app.git
+   cd tiny-wins
+   
+2. Install dependencies:
+  ```bash
+  npm install
+  ```bash
+
+3. Start the development server:
+  ```bash
+  npm start
+
+
+
+
 # Welcome to your Lovable project
 
 ## Project info
