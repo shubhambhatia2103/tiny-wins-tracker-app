@@ -41,8 +41,7 @@ Whether it's drinking water, stretching for 5 minutes, or reading a page of a bo
 
 ## 📸 Preview
 
-> Coming soon — Stay tuned for screenshots & live demo link.
-> ![live demo link](#https://tiny-wins-tracker-app.lovable.app)
+[live demo link](#https://tiny-wins-tracker-app.lovable.app)
 
 ---
 
